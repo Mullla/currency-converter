@@ -1,0 +1,63 @@
+*, ::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#get-currency{
+    padding: 15px;
+}
+
+.input, .output{
+    padding: 5px;
+    margin: 5px;
+    width: 400px;
+}
+
+button{
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: auto;
+}
+
+.usd-block, .eur-block{
+    display: none;
+}
+
+.usd-block label, .eur-block label{
+    width: 150px;
+}
+
+.usd-block > div, .eur-block > div {
+    display: flex;
+    align-items: center;
+}
+
+.show{
+    display: block;
+}
+
+.choice{
+    margin-bottom: 15px;
+}
+
+.choice label{
+    margin: 0 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    max-width: 50px;
+    background: royalblue;
+    border-radius: 4px;
+    text-align: center;
+    color: gainsboro;
+}
+
+.choice label>input{
+    cursor: pointer;
+    display: none;
+}

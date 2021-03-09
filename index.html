@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер валют</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="get-currency">
+        <div class="choice">
+            <label class="usd" for="usd-radio">
+                <input class="usd" type="radio" name="radio-choice" value="usd" id="usd-radio">USD
+            </label>
+            <label class="eur" for="eur-radio">
+                <input class="eur" type="radio" name="radio-choice" value="eur" id="eur-radio">EUR
+            </label>
+        </div>
+
+        <div class="usd-block">
+            <div class="usd-rub">
+                <label for="from-usd">Доллар США(USD)</label>
+                <input class="input usd" type="text" data-currency="usd-rub">
+
+                <button class="convert-btn" type="button">Конвертировать</button>
+
+                <label for="to-rub">Российский рубль</label>
+                <input class="output usd" type="text" >
+            </div>
+
+            <div class="rub-usd">
+                <label for="from-rub">Российский рубль</label>
+                <input class="input usd" type="text" data-currency="rub-usd">
+
+                <button class="convert-btn" type="button">Конвертировать</button>
+
+                <label for="to-usd">Доллар США(USD)</label>
+                <input class="output usd" type="text" >
+            </div>
+        </div>
+        <!-- usd -->
+
+        <div class="eur-block">
+            <div class="eur-rub">
+                <label for="from-eur">Евро(EUR)</label>
+                <input class="input eur" type="text" data-currency="eur-rub">
+
+                <button class="convert-btn" type="button">Конвертировать</button>
+
+                <label for="to-rub">Российский рубль</label>
+                <input class="output eur" type="text">
+            </div>
+
+            <div class="rub-eur">
+                <label for="from-rub">Российский рубль</label>
+                <input class="input eur" type="text" data-currency="rub-eur">
+
+                <button class="convert-btn" type="button">Конвертировать</button>
+
+                <label for="to-eur">Евро(EUR)</label>
+                <input class="output eur" type="text">
+            </div>
+        </div>
+        <!-- eur -->
+        
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
